@@ -11,9 +11,12 @@ font-family: IRANSans;
     padding: 0;
     direction: rtl;
    inset: 0;
-    background: url('imags/backgrund.jpg') no-repeat center center;
+    background:
+     url('imags/backgrund.jpg') no-repeat center center;
    background-size: cover;
    z-index: 1;
+   width: 100%;
+
 }
 header{
     z-index: 4;
@@ -58,6 +61,7 @@ header{
  background-color: white;
  border-radius: 30px;
   font-size:18px;
+  font-weight:500;
 }
 .buttom a {
     color: #E82026;
@@ -87,28 +91,31 @@ header a {
    align-items: center;
 }
 .conteiner-bottom{
-    z-index: 100;
-    position: absolute;
-    bottom: 0px;
-   
-    width:84%;
-   
+    z-index: 10000;
+    position: relative;
+    bottom: 50px;
+    width:70%;
+     height: auto;
+     margin: auto;
 }
+
 #padideh{
     position: absolute;
-    left:60px;
+    left:0;
     bottom: 10px;
     width: 65%;
 }
 #logo-padideh{
     position: absolute;
-   left: 500px;
-    bottom: 140px;
+   left:370px;
+    bottom: 120px;
+    width: 110px;
 }
 .conteiner-box{
 position: absolute;
-bottom: 150px;
-right: 80px;
+bottom: 130px;
+right: 0px;
+
 }
 .conteiner-box p {
     color: white;
@@ -116,14 +123,13 @@ right: 80px;
 }
 .box input{
     width:500px;
-    height: 50px;
+    height: 45px;
     border-radius: 100px;
    border: none;
  direction: rtl;
- 
     background-color: hsl(0, 0%, 100%, 0.7);
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     position: relative;
     border-bottom: 1px solid #821215 ;
     padding-right: 25px;
@@ -145,7 +151,7 @@ right: 80px;
 .box-buttom{
     position: absolute;
     left:20px;
-    top: 76px;
+    top: 70px;
     padding: 10px;
       border-radius: 25px;
     background-color:#AF2229;
@@ -168,8 +174,68 @@ right: 80px;
 .gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,#821215 0%, rgba(0, 0, 0, 0) 70%);
+  background: linear-gradient(to top,rgb(130, 18, 21) 0%, rgba(0, 0, 0, 0) 70%);
   z-index: 3;
   pointer-events: none;
 }
+.content{
+    background-color: #FDDDBC;
+    height: auto;
+    margin: 0;
+   padding: 200px 0 100px 0;
+    overflow-y: hidden;
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+}
+  .image-box {
+      position: relative;
+      border-radius: 40px;
+      width:400px;
+      height: 550px;
+      background-color:rgb(200, 16, 46); ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .image-box img {
+      width: 110%;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .image-gradient {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+     background: linear-gradient(
+    to top,
+   rgba(60, 4, 6, 0.9) 2%,
+    rgba(130, 18, 21, 0.8) 30%,
+    rgba(200, 16, 46,0)100%
+  );
+       border-radius:40px ;
+    }
+
+    .text-buttons {
+      display: flex;
+      flex-direction: column;
+      gap:30px;
+     
+    }
+
+    .text-buttons .btn {
+      background-color: #c8102e;
+      color: white;
+      padding: 20px 15px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 16px;
+      font-weight: bold;
+      width: 400px;
+      text-align: center;
+       border:3px solid white ;
+    }
