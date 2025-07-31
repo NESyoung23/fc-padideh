@@ -90,31 +90,27 @@ header a {
    justify-content: center;
    align-items: center;
 }
-.conteiner-bottom{
-    z-index: 10000;
-    position: relative;
-    bottom: 50px;
-    width:70%;
-     height: auto;
-     margin: auto;
-}
+
 
 #padideh{
     position: absolute;
-    left:0;
-    bottom: 10px;
-    width: 65%;
+    left:15%;
+    bottom:-70px;
+    width: 48%;
+     z-index: 10000;
 }
 #logo-padideh{
     position: absolute;
-   left:370px;
-    bottom: 120px;
+   left:40%;
+   bottom: 6%;
     width: 110px;
+      z-index: 10000;
 }
 .conteiner-box{
 position: absolute;
-bottom: 130px;
-right: 0px;
+ right:15%;
+    bottom:6%;
+  z-index: 10000;
 
 }
 .conteiner-box p {
@@ -168,7 +164,7 @@ right: 0px;
  position: relative;
   z-index: 2; 
   display: block;
-  width:70%;
+  width:65%;
   margin: 0 auto;
 }
 .gradient {
